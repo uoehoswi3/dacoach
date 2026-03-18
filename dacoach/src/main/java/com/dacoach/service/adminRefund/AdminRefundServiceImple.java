@@ -29,7 +29,7 @@ public class AdminRefundServiceImple implements AdminRefundService{
 			return new ArrayList<>();
 		}
 	}
-	@Transactional(rollbackFor = Exception.class)
+	@Transactional
 @Override
 public String approveRefund(int pay_idx) {
     try {
